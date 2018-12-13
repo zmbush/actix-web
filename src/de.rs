@@ -285,10 +285,12 @@ impl<'de> Deserializer<'de> for Value<'de> {
     parse_value!(deserialize_i16, visit_i16, "i16");
     parse_value!(deserialize_i32, visit_i32, "i16");
     parse_value!(deserialize_i64, visit_i64, "i64");
+    parse_value!(deserialize_i128, visit_i128, "i128");
     parse_value!(deserialize_u8, visit_u8, "u8");
     parse_value!(deserialize_u16, visit_u16, "u16");
     parse_value!(deserialize_u32, visit_u32, "u32");
     parse_value!(deserialize_u64, visit_u64, "u64");
+    parse_value!(deserialize_u128, visit_u128, "u128");
     parse_value!(deserialize_f32, visit_f32, "f32");
     parse_value!(deserialize_f64, visit_f64, "f64");
     parse_value!(deserialize_string, visit_string, "String");
